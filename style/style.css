@@ -1,0 +1,475 @@
+/* Add your font */
+
+@font-face {
+  font-family: 'AcuminBdPro';
+  src: url('../fonts/AcuminBdPro.otf');
+}
+/* Your styles */
+
+body {
+  background-color:#DECECE;
+}
+.GD {
+  background-color: #D4BBBB;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'AcuminBdPro';
+}
+.mainmenu {
+  font-size: 13vh;
+  padding-top: 15vh;
+  padding-left: 3vh;
+}
+.GDmainmenu {
+  font-size: 7vh;
+  padding-top: 15vh;
+  padding-left: 3vh;
+}
+.mainmenuall {
+  display: flex;
+  height: 100vh;
+  margin-bottom: 0px;
+}
+.imagmain {
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.mainmenuGD:hover .imagmain {
+  display: block;
+}
+.mainmenuP:hover .imagmain {
+  display: block;
+}
+.mainmenuA:hover .imagmain {
+  display: block;
+  position: absolute;
+}
+.cillapsiblmenu ul {
+  list-style: none;
+outline: 1pt;
+outline-color: black;
+}
+.cillapsiblmenu {
+outline: 1pt;
+outline-color: black;
+}
+.menucontent{
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'AcuminBdPro';
+  font-size: 5vh;
+  position: absolute;
+  background-color: #7F9CB1;
+  padding-right: 35px;
+  display: inline-flex;
+  z-index: 2;
+}
+input#menu {
+  display: none;
+}
+input:checked ~ .menucontent {
+  max-height: 100%;
+}
+.cillapsiblmenu label {
+  padding-left: 3vh;
+}
+.GDProjects {
+  background-color: #BB9E9E;
+  position:absolute;
+}
+h1 {
+  padding-left: 15vh;
+  font-family: 'AcuminBdPro';
+  font-size: 5vh;
+}
+h2 {
+  padding-left: 15vh;
+  font-family: 'AcuminBdPro';
+  font-size: 4vh;
+}
+p {
+  padding-left: 15vh;
+  font-family: 'AcuminBdPro';
+  font-size: 3vh;
+  width: 30%;
+}
+.imageprojects{
+  padding-left: 30vh;
+
+}
+.sliderA {
+margin-left: 600px;
+  margin-top: 30px;
+  position: absolute;
+       width: 800px;
+       height: 640px;
+       display: flex;
+       align-items: flex-end;
+       justify-content: center;
+   }
+   .sliderA > input {
+          display: none;
+      }
+.sliderA > input + label {
+        display:flex;
+        width: 5px;
+        height: 5px;
+        background: #7F9CB1;
+        margin: 10px;
+        align-items: flex-end;
+        justify-content: center;
+
+        cursor: auto;
+        z-index: 1;
+        position: relative;
+
+      margin-right: 0px;
+        top: 0%;
+
+          }
+
+          .sliderA > input + label:hover {
+              background: #BB9E9E;
+          }
+
+          .sliderA > input:checked + label {
+              background: #BB9E9E;
+          }
+  .sliderA > div {
+    width: 800px;
+    height: 640px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   z-index: 0;
+    }
+    .sliderA > div {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+    .sliderA > input:checked + label + div {
+      align-items: center;
+      justify-content: center;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+    .sliderA > input + label + div + label {
+        display: none;
+    }
+
+    .sliderA > input:checked + label + div + label {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+#all {display:flex;
+flex-direction: column;
+}
+/*.sliderA {padding-left: 41vw;}
+.slid {padding-left: 80vw;}*/
+.Ph{
+  background-color: #CCC2C2;
+}
+.PhProjects{
+  background-color: #C0C0C0;
+}
+.sliderB {
+  margin-left: 20vw;
+  margin-top: 30px;
+  position: absolute;
+       width: 800px;
+       height: 640px;
+       display: flex;
+       align-items: flex-end;
+       justify-content: center;
+   }
+   .sliderB > input {
+          display: none;
+      }
+.sliderB > input + label {
+        display:flex;
+        width: 5px;
+        height: 5px;
+        background: #7F9CB1;
+        margin: 10px;
+        align-items: flex-end;
+        justify-content: center;
+
+        cursor: auto;
+        z-index: 1;
+        position: relative;
+
+      margin-right: 0px;
+        top: 0%;
+
+          }
+
+          .sliderB > input + label:hover {
+              background: #C0C0C0;
+          }
+
+          .sliderB > input:checked + label {
+              background: #C0C0C0;
+          }
+  .sliderB > div {
+    width: 800px;
+    height: 640px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   z-index: 0;
+    }
+    .sliderB > div {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+    .sliderB > input:checked + label + div {
+      align-items: center;
+      justify-content: center;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+    .sliderB > input + label + div + label {
+        display: none;
+    }
+
+    .sliderB > input:checked + label + div + label {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .language {display: none;
+      flex-grow: 1;
+      position: absolute;
+      font-size: 2vh;
+    padding-left: 3vh;}
+@media (min-width: 640px) and (max-width: 1024px) {
+      .imagmain {
+        display: none;
+      }
+      .i {display: none;}
+.mainmenu {
+  font-size: 5vh;
+}
+.cillapsiblmenu > label > img {width: 10%;
+height: 10%;}
+
+
+.menucontent > ul > li { font-size: 4vh;}
+.menucontent {z-index: 2;
+  width: 68%;
+  height: 25vh;}
+
+
+.all {display: flex;
+flex-direction: row;}
+
+p {position: relative;
+  width: 80%;
+padding-left: 5vh;}
+
+.sliderA {
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  position: relative;
+       width: 800px;
+       height: 640px;
+       display: flex;
+align-items: center;
+       justify-content: center;
+   }
+   .sliderA > input {
+          display: none;
+      }
+.sliderA > input + label {
+        display:flex;
+        width: 5px;
+        height: 5px;
+        background: #7F9CB1;
+        margin: 10px;
+        align-items: flex-end;
+        justify-content: center;
+
+        cursor: auto;
+        z-index: 1;
+        position: relative;
+
+      margin-right: 0px;
+        top: 0%;
+
+          }
+
+          .sliderA > input + label:hover {
+              background: #BB9E9E;
+          }
+
+          .sliderA > input:checked + label {
+              background: #BB9E9E;
+          }
+  .sliderA > div {
+    width: 800px;
+    height: 640px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   z-index: 0;
+    }
+    .sliderA > div {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+    .sliderA > input:checked + label + div {
+      align-items: center;
+      justify-content: center;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+    .sliderA > input + label + div + label {
+        display: none;
+    }
+
+    .sliderA > input:checked + label + div + label {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 5;
+    }
+    .about {position: relative;
+      z-index: 1;
+      padding-left: 5vh;
+      font-family: 'AcuminBdPro';
+      font-size: 4vh;}
+    h1 {position: relative;
+      z-index: 1;
+      padding-left: 5vh;
+      font-family: 'AcuminBdPro';
+      font-size: 5vh;
+    }
+    h2 {position: relative;
+      z-index: 1;
+      padding-left: 5vh;
+      font-family: 'AcuminBdPro';
+      font-size: 4vh;
+    }
+#all {display:flex;
+flex-direction: column;
+position: relative;
+flex-grow: 1;
+}
+.sliderB {
+  margin-left: 9vw;
+  margin-bottom: 10vh;
+  position: relative;
+       width: 800px;
+       height: 640px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .sliderB > input {
+          display: none;
+      }
+.sliderB > input + label {
+        display:flex;
+        width: 5px;
+        height: 5px;
+        background: #7F9CB1;
+        margin: 10px;
+        align-items: flex-end;
+        justify-content: center;
+
+        cursor: auto;
+        z-index: 1;
+        position: relative;
+
+      margin-right: 0px;
+        top: 0%;
+
+          }
+
+          .sliderB > input + label:hover {
+              background: #C0C0C0;
+          }
+
+          .sliderB > input:checked + label {
+              background: #C0C0C0;
+          }
+  .sliderB > div {
+    width: 800px;
+    height: 640px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   z-index: 1;
+    }
+    .sliderB > div {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+    .sliderB > input:checked + label + div {
+      align-items: center;
+      justify-content: center;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+    .sliderB > input + label + div + label {
+        display: none;
+    }
+
+    .sliderB > input:checked + label + div + label {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+    }
+}
