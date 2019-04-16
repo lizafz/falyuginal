@@ -427,11 +427,11 @@ flex-grow: 1;
 
           }
 
-          .sliderB > input + label:hover {
+          .sliderB > input + label:hover {display: none;
               background: #C0C0C0;
           }
 
-          .sliderB > input:checked + label {
+          .sliderB > input:checked + label {display: none;
               background: #C0C0C0;
           }
   .sliderB > div {
