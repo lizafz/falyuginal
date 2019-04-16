@@ -329,11 +329,11 @@ align-items: center;
 
           }
 
-          .sliderA > input + label:hover {
+          .sliderA > input + label:hover {display: none;
               background: #BB9E9E;
           }
 
-          .sliderA > input:checked + label {
+          .sliderA > input:checked + label {display: none;
               background: #BB9E9E;
           }
   .sliderA > div {
