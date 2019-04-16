@@ -312,7 +312,7 @@ align-items: center;
           display: none;
       }
 .sliderA > input + label {
-        display:flex;
+        display:none;
         width: 5px;
         height: 5px;
         background: #7F9CB1;
@@ -410,7 +410,7 @@ flex-grow: 1;
           display: none;
       }
 .sliderB > input + label {
-        display:flex;
+        display:none;
         width: 5px;
         height: 5px;
         background: #7F9CB1;
