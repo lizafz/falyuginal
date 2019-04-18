@@ -89,7 +89,7 @@ h1 {
   font-family: 'AcuminBdPro';
   font-size: 4vh;
 }
-h2 {
+h2 {display: none;
   padding-left: 15vh;
   font-family: 'AcuminBdPro';
   font-size: 4vh;
@@ -386,6 +386,7 @@ align-items: center;
       font-size: 5vh;
     }
     h2 {position: relative;
+      display: none;
       z-index: 1;
       padding-left: 5vh;
       font-family: 'AcuminBdPro';
